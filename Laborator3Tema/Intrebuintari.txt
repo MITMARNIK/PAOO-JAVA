@@ -1,0 +1,85 @@
+1. Singleton Pattern:
+
+Gestionarea conexiunilor la baze de date: Asigură o singură conexiune pentru a evita suprasolicitarea resursei.
+
+Configurarea aplicației: Un singur obiect care stochează și oferă acces la setările globale.
+
+Servicii de logging: O singură instanță pentru a centraliza înregistrarea evenimentelor.
+
+Cache-uri: O singură instanță pentru gestionarea datelor stocate temporar.
+
+Pool-uri de thread-uri: Asigură o singură instanță care gestionează un set de thread-uri reutilizabile.
+
+
+2. Adapter Pattern:
+
+Integrarea cu sisteme vechi (Legacy Systems): Permite codului nou să lucreze cu interfețe vechi.
+
+Utilizarea bibliotecilor terțe părți: Adaptează interfața bibliotecii la cea așteptată de aplicația ta.
+
+Uniformizarea interfețelor: Face ca clase cu interfețe diferite să poată fi utilizate în mod similar.
+
+Refactorizarea codului: Menține compatibilitatea cu codul vechi în timpul modificării interfețelor.
+
+Lucrul cu API-uri externe: Adaptează structurile de date și protocoalele API-ului la cele ale aplicației tale.
+
+
+3. Observer Pattern:
+
+Interfețe grafice (GUI): Gestionarea evenimentelor (click-uri de buton, modificări de text) unde mai multe componente trebuie să reacționeze la același eveniment.
+
+Model-View-Controller (MVC) și arhitecturi similare: Actualizarea vizualizării (View) atunci când modelul (Model) se schimbă.
+
+Sisteme de notificare: Alertarea utilizatorilor sau a altor sisteme când are loc un eveniment specific.
+
+Spreadsheet-uri: Recalcularea celulelor dependente atunci când o celulă își modifică valoarea.
+
+Sisteme de publicare-subscriere (Publish/Subscribe): Permite componentelor să se aboneze la evenimente specifice fără a se cunoaște direct.
+
+
+4. Facade Pattern:
+
+Simplificarea interacțiunii cu subsisteme complexe: Oferă o interfață ușor de utilizat pentru un set de clase complexe.
+
+Ascunderea complexității: Protejează clientul de detaliile interne ale unui subsistem.
+
+Reducerea dependențelor: Clientul depinde doar de interfața facade-ului, nu de componentele interne.
+
+Organizarea codului: Definește un punct unic de intrare pentru un anumit set de funcționalități.
+
+Biblioteci și framework-uri: Adesea folosite pentru a simplifica utilizarea componentelor interne ale unei biblioteci sau framework.
+
+
+5. Decorator Pattern:
+
+Adăugarea dinamică de funcționalități: Permite extinderea comportamentului unui obiect individual în timpul execuției.
+
+Extinderea responsabilităților fără subclasare: Oferă o alternativă flexibilă la moștenire.
+
+Fluxuri de intrare/ieșire (IO Streams): În Java, clasele InputStream, OutputStream, Reader, Writer sunt adesea decorate cu clase precum BufferedInputStream, DataInputStream, BufferedReader pentru a adăuga funcționalități de buffering sau manipulare a datelor.
+
+Interfețe grafice (GUI): Adăugarea de borduri, scrollbar-uri sau alte elemente vizuale la componente.
+
+Implementarea de filtre sau interceptori: Adăugarea de logică suplimentară înainte sau după executarea unei operațiuni.
+
+
+6. Factory Pattern (Simple Factory și Factory Method):
+
+Crearea de diferite tipuri de documente: O aplicație ar putea folosi o fabrică pentru a crea obiecte Document de tip PDFDocument, WordDocument, PlainTextDocument în funcție de formatul dorit.
+
+Instanțierea de obiecte plugin: Un sistem de plugin-uri ar putea folosi o fabrică pentru a crea instanțe ale plugin-urilor încărcate dinamic, fără a cunoaște clasele concrete ale acestora la compilare.
+
+
+7. Abstract Factory Pattern:
+
+Suport pentru diferite teme vizuale: O aplicație ar putea folosi fabrici abstracte pentru a crea widget-uri (butoane, meniuri) cu aspectul specific unei teme (e.g., Material Design, iOS).
+
+Crearea de aplicații multi-platformă: O fabrică abstractă ar putea defini interfețe pentru componente specifice platformei (e.g., sistem de fișiere, servicii de rețea), cu implementări concrete pentru fiecare sistem de operare.
+
+
+8. Builder Pattern:
+
+Crearea de cereri HTTP complexe: Biblioteci HTTP client moderne (e.g., OkHttp în Java) folosesc builder-i pentru a permite configurarea detaliată a cererilor (metodă, URL, headers, body, timeout-uri).
+
+Construirea de obiecte cu configurații multiple: Un builder poate fi folosit pentru a crea obiecte care pot avea multe combinații de atribute opționale, cum ar fi un obiect de notificare cu titlu, mesaj, destinatari multipli, acțiuni, etc.
+
